@@ -1,7 +1,7 @@
 task: detect
 mode: train
 model: yolov8n.pt
-data: /home/tuna/Desktop/HomeWorks/MachineLearning/MachineLearningHomework-1/data.yaml
+data: /home/tuna/Desktop/HomeWorks/MachineLearning/HomeWork2/MachineLearningHomework-1/data.yaml
 epochs: 50
 time: null
 patience: 100

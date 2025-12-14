@@ -1,0 +1,13 @@
+names:
+- etiketli
+- etiketsiz
+nc: 2
+roboflow:
+  license: CC BY 4.0
+  project: machinelearninghomework
+  url: https://universe.roboflow.com/tuna-cn0wa/machinelearninghomework/dataset/1
+  version: 1
+  workspace: tuna-cn0wa
+test: ../test/images
+train: ../train/images
+val: ../valid/images
