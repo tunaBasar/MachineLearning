@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Köpekbalığı Ağırlık Tahmini 🦈</title>
+    <style>
+        /* GARANTİ ORTALAMA ÇÖZÜMÜ (GRID) */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0f7fa; /* Okyanus mavisi */
+
+            /* İşte sihirli kodlar: */
+            display: grid;
+            place-items: center;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            width: 90%;          /* Mobilde taşmasın diye */
+            max-width: 400px;    /* Masaüstünde çok genişlemesin */
+            text-align: center;
+        }
+        /* Diğer stiller aynı kalabilir */
+        h2 { color: #006064; margin-top: 0; }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        button {
+            background-color: #00838f;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+        button:hover { background-color: #006064; }
+        .result {
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #d32f2f;
+            padding: 15px;
+            background-color: #ffebee;
+            border-radius: 8px;
+            border: 1px solid #ffcdd2;
+        }
+        .footer { margin-top: 25px; font-size: 12px; color: #888; }
+        label {
+            display: block;
+            text-align: left;
+            font-weight: 600;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>🦈 Ağırlık Tahmin Sistemi</h2>
+        <p>Deniz biyoloğu, verileri gir bakalım:</p>
+
+        <form action="/predict" method="post">
+            <label for="length">Boy Uzunluğu (cm):</label>
+            <input type="number" step="0.1" name="length" placeholder="Örn: 400" required>
+
+            <label for="fin_height">Yüzgeç Yüksekliği (cm):</label>
+            <input type="number" step="0.1" name="fin_height" placeholder="Örn: 60" required>
+
+            <label for="age">Yaş (Yıl):</label>
+            <input type="number" name="age" placeholder="Örn: 15" required>
+
+            <label for="gender">Cinsiyet:</label>
+            <select name="gender" required>
+                <option value="1">Erkek (Male)</option>
+                <option value="0">Dişi (Female)</option>
+            </select>
+
+            <label for="species">Tür:</label>
+            <select name="species" required>
+                <option value="Great White">Great White (Büyük Beyaz)</option>
+                <option value="Tiger">Tiger (Kaplan)</option>
+                <option value="Hammerhead">Hammerhead (Çekiçbaş)</option>
+            </select>
+
+            <button type="submit">Tahmin Et</button>
+        </form>
+
+        {% if prediction_text %}
+        <div class="result">
+            {{ prediction_text }}
+        </div>
+        {% endif %}
+
+        <div class="footer">BLG-407 Makine Öğrenmesi Projesi</div>
+    </div>
+
+</body>
+</html>
