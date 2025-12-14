@@ -40,29 +40,19 @@ python gui_app.py
 
 ---
 
-##📂 Proje 3: Flask ile Köpekbalığı Ağırlık Tahmini (Regresyon)
+## 📂 Proje 3: Flask ile Köpekbalığı Ağırlık Tahmini (Regresyon)
 
 
 Son projede, Çoklu Doğrusal Regresyon (Multiple Linear Regression) yöntemini kullanarak bir tahmin modeli geliştirdim. Senaryo olarak köpekbalıklarının fiziksel özelliklerinden ağırlıklarını tahmin etmeyi seçtim.
 
-    Veri Analizi Adımlarım:
+* **Veri Analizi Adımlarım:**
+    * Veri setindeki eksik yaş bilgilerini ortalama değer atayarak doldurdum.
+    * "Tür" ve "Cinsiyet" gibi sözel verileri, makine anlayabilsin diye sayısal verilere (Encoding) çevirdim.
+    * **Backward Elimination** tekniğiyle, sonuca etkisi olmayan (P-değeri yüksek) gereksiz sütunları eledim.
+* **Web Arayüzü:** Flask kullanarak basit bir web sitesi yaptım. Bu sayede verileri forma girince model arka planda çalışıp tahmini ekrana yazdırıyor.
 
-        Veri setindeki eksik yaş bilgilerini ortalama değer atayarak doldurdum.
-
-        "Tür" ve "Cinsiyet" gibi sözel verileri, makine anlayabilsin diye sayısal verilere (Encoding) çevirdim.
-
-        Backward Elimination tekniğiyle, sonuca etkisi olmayan (P-değeri yüksek) gereksiz sütunları eledim.
-
-    Web Arayüzü: Flask kullanarak basit bir web sitesi yaptım. Bu sayede verileri forma girince model arka planda çalışıp tahmini ekrana yazdırıyor.
-
-Kurulum ve Çalıştırma:
-    
-    cd Proje3_KopekbaligiAgirlikTahmin
-    pip install -r requirements.txt
-    python app.py
-
-🛠 Genel Kurulum Notları
-
-Projeleri çalıştırmadan önce ilgili klasörün içindeki kütüphaneleri yüklemeniz gerekebilir:
-    
-    pip install -r requirements.txt
+**Kurulum ve Çalıştırma:**
+```bash
+cd Proje3_KopekbaligiAgirlikTahmin
+pip install -r requirements.txt
+python app.py
