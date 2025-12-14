@@ -1,7 +1,7 @@
 # BLG-407 Makine Öğrenmesi - Dönem Projeleri
 
-**Ad Soyad:** [Adını Soyadını Buraya Yaz]
-**Öğrenci No:** [Numaranı Yaz]
+**Ad Soyad:** Hilmi Tunahan BAŞAR
+**Öğrenci No:** 2112721019
 **Dönem:** 2025-2026 Güz
 
 Bu depo, BLG-407 Makine Öğrenmesi dersi kapsamında geliştirdiğim üç farklı projeyi içeriyor. Dönem boyunca görüntü işleme, nesne tespiti ve regresyon analizi üzerine çalışmalar yaptım.
