@@ -9,7 +9,6 @@ Bu depo, BLG-407 Makine Öğrenmesi dersi kapsamında geliştirdiğim üç farkl
 ---
 
 ## 📂 Proje 1: CNN ile Görüntü Sınıflandırma
-*(Klasör: Homework1)*
 
 Bu projede hazır veri seti kullanmak yerine, kendi çektiğim fotoğraflardan oluşan özgün bir veri seti oluşturdum ve bir CNN (Konvolüsyonel Sinir Ağı) modeli eğittim.
 
@@ -23,7 +22,6 @@ Bu projede hazır veri seti kullanmak yerine, kendi çektiğim fotoğraflardan o
 ---
 
 ## 📂 Proje 2: YOLOv8 ile Nesne Tespiti ve Masaüstü Arayüzü
-*(Klasör: Proje2_NesneTespiti)*
 
 İkinci projede, güncel YOLOv8 algoritmasını kullanarak nesne tespiti yapan bir model eğittim. Ardından bu modelin kolayca kullanılabilmesi için bir masaüstü uygulaması geliştirdim.
 
@@ -43,7 +41,6 @@ Bu projede hazır veri seti kullanmak yerine, kendi çektiğim fotoğraflardan o
 ---
 
 ## 📂 Proje 3: Flask ile Köpekbalığı Ağırlık Tahmini (Regresyon)
-*(Klasör: Proje3_KopekbaligiAgirlikTahmin)*
 
 Son projede, Çoklu Doğrusal Regresyon (Multiple Linear Regression) yöntemini kullanarak bir tahmin modeli geliştirdim. Senaryo olarak köpekbalıklarının fiziksel özelliklerinden ağırlıklarını tahmin etmeyi seçtim.
 
